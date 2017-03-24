@@ -1,0 +1,15 @@
+<!--<div id="dd" ng-repeat = 'item in strs'>
+	<p>{{item.text}}</p>
+	
+	
+</div>-->
+ <div class="contents" ng-repeat='x in strs'>
+						<div class="text" >{{x.text}}</div>
+						<div class="comment"><span class="user">小野牛的小野牛</span>:  哈哈哈。。。</div>
+						<div class="tool">
+							<div class="col-xs-3 tool-css"><i class="icon-thumbs-up"></i>{{x.love}}</div>
+							<div class="col-xs-3 tool-css" style="padding: 0;margin: 0;"><i class="icon-comments-alt"></i>{{x.hate}} </div>
+							<div class="col-xs-4 tool-css" style="padding: 0;margin: 0;">{{x.create_time}}</div>														
+							<div class="col-xs-2 tool-css"><i class="icon-share"></i></div>
+						</div>
+					</div>

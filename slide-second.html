@@ -1,0 +1,21 @@
+<div id="dd" ng-repeat = 'item in news'>
+	<div class="item-box">
+		<div class="box-left">
+			<strong><a href="news.html?id={{item.channelId}}&Date={{item.pubDate}}">{{item.title}}</a></strong>
+			<p ><span ng-bind="item.channelName "></span>&nbsp;<sapn ng-bind="item.pubDate"  ></sapn>  &nbsp;<i class="ion-ios-close-outline"></i></p><!--{{(item.imageurls.length)}}-->
+		</div>
+		<div class="box-right">
+			<div class="box-img">
+				<div class="num" ng-bind="(item.imageurls.length)">					
+				</div>
+				<img ng-src = '{{item.imageurls[0].url}}'>
+			</div>
+			
+		</div>
+		
+		
+	</div>
+	
+	
+	
+</div>

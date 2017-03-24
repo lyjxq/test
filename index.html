@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>掌上宝</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<!--css插件样式-->
+		<link rel="stylesheet" type="text/css" href="libs/plugin/ionic/css/ionic.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/plugin/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/plugin/Font-Awesome-3.2.1/css/font-awesome.min.css"/>
+		<!--css自敲样式-->
+		<link rel="stylesheet" type="text/css" href="libs/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/css/slide-second.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/css/slide-first.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/css/slide-tianqi.css"/>
+		
+		<!--js插件-->
+		<script src="libs/plugin/ionic/js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/jquery/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="libs/jquery/angular.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--js自敲-->
+		<script src="libs/js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/js/slide-global.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-app='myApp' ng-controller='myCtrl'>
+		<!--引入侧栏菜单-->
+		<ion-side-menus>
+		  <!-- 中间内容 -->
+		  <ion-side-menu-content >
+		  	<!--头部标题-->
+		  	<div class="bar bar-header bar-assertive">
+			  	<div class='col-xs-3 pm' ng-bind='title' ></div>	<!--掌上宝-->
+			  	<div class='col-xs-9 pm' > 
+			  		<div class="item-input-inset title" style="padding: 0;margin: 0;">
+					  	<label class="item-input-wrapper">
+						    <i class="icon ion-ios-search placeholder-icon"></i>
+						    <input type="search" placeholder="Search">	<!--输入框-->
+					  	</label>				 
+					</div>
+			  	</div>
+			</div>
+			<!--导航-->
+			<div class=" bar has-header menu-zsb padmar">
+				<div id="menus">
+					<div class='title-menu'><a href="" ng-click='activeslide(0)'>推荐</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(1)'>段子</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(2)'>军事</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(3)'>天气</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(4)'>视频</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(5)'>热点</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(6)'>美女</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(7)'>体育</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(8)'>娱乐</a></div>
+					<div class='title-menu'><a href="" ng-click='activeslide(9)'>图片</a></div>
+					
+				</div>
+				<div id="add">
+					<i class="ion-ios-plus-empty"></i>
+				</div>
+			</div>
+			<div class="content-box ">
+				<!--滑动框-->
+				<ion-slide-box on-slide-changed="slideHasChanged($index)" >
+					
+				<!--第一屏-->
+				<ion-slide>
+					<ion-content class="box blue">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefreshSecond()" ></ion-refresher>	   						
+   						<secondslide></secondslide>
+  					</ion-content>					
+				</ion-slide>
+				
+				<!--第二屏-->
+				<ion-slide>
+					<ion-content class="box blue1">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefreshFirst()" ></ion-refresher>	  					
+   					<firstslide></firstslide>
+  					</ion-content>				    
+				</ion-slide>
+				
+				<!--第三屏-->
+				<ion-slide>
+					<ion-content class="box blue2">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" ></ion-refresher>	
+   							3
+ 
+  					</ion-content>
+				    
+				</ion-slide>
+				<!--第四屏-->
+				<ion-slide>
+					<ion-content class="box blue ">
+ 						<tianqi></tianqi>
+  					</ion-content>
+				    
+				</ion-slide>
+				<!--第四屏-->
+				<ion-slide>
+					<ion-content class="box blue2">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" ></ion-refresher>	
+   							5
+ 						
+  					</ion-content>
+				    
+				</ion-slide>
+				<!--第四屏-->
+				<ion-slide>
+					<ion-content class="box blue2">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" ></ion-refresher>	
+   							6
+ 
+  					</ion-content>
+				    
+				</ion-slide>
+				<!--第四屏-->
+				<ion-slide>
+					<ion-content class="box blue2">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" ></ion-refresher>	
+   							7
+ 
+  					</ion-content>
+				    
+				</ion-slide>
+				<!--第四屏-->
+				<ion-slide>
+					<ion-content class="box blue2">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" ></ion-refresher>	
+   							8
+ 
+  					</ion-content>
+				    
+				</ion-slide>
+				<!--第四屏-->
+				<ion-slide>
+					<ion-content class="box blue2">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" ></ion-refresher>	
+   							9
+ 
+  					</ion-content>
+				    
+				</ion-slide>
+				<!--第四屏-->
+				<ion-slide>
+					<ion-content class="box blue2">
+						<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()" ></ion-refresher>	
+   							10
+ 
+  					</ion-content>
+				    
+				</ion-slide>
+				</ion-slide-box>
+			</div>
+			
+			
+			<!--底部导航-->
+			<div class="bar bar-footer bg-footer">
+			  	<div class='col-xs-3 pm-zsb' ><i class="ion-home"></i><br /><span class="font-zsb">首页</span></div>
+			  	<div class='col-xs-3 pm-zsb' ><i class="ion-ios-videocam"></i><br /><span class="font-zsb">视频</span></div>			  	
+			  	<div class='col-xs-3 pm-zsb' ><i class="ion-android-favorite"></i><br /><span class="font-zsb">关注</span></div>
+			  	<div class='col-xs-3 pm-zsb' ng-click="toggleLeft()"><i class="ion-android-person"></i><br /><span class="font-zsb"> 我的</span></div>
+			</div>
+		  </ion-side-menu-content>
+<!--/////////////////////////////////////////////////////-->		
+		  <!-- 左侧菜单 -->
+		  <ion-side-menu side="left">
+		  	左侧菜单
+		  </ion-side-menu>
+		
+		  
+		</ion-side-menus>
+	
+	</body>
+</html>

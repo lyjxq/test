@@ -1,0 +1,94 @@
+.padmar {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 8px; }
+
+.pm {
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  line-height: 41px; }
+
+.pm-zsb {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 13px;
+  text-align: center; }
+
+.font-zsb {
+  font-size: 5px; }
+
+.menu-zsb {
+  width: 100%;
+  height: 30px;
+  line-height: 1;
+  background: #F5F0F0;
+  overflow: hidden; }
+  .menu-zsb #menus {
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute; }
+    .menu-zsb #menus .title-menu {
+      width: 40px;
+      float: left;
+      text-align: center;
+      font-size: 10px; }
+      .menu-zsb #menus .title-menu a {
+        color: #000000; }
+      .menu-zsb #menus .title-menu .active {
+        color: #EF473A;
+        font-size: 15px; }
+  .menu-zsb #add {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-left: 1px solid #E6E6E6;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(238, 238, 238, 0.9);
+    text-align: center;
+    font-size: 24px; }
+
+.bg-footer {
+  background: #EEEEEE; }
+  .bg-footer .active {
+    color: #EF473A; }
+
+#cc {
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background: orange; }
+
+.content-box {
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 74px; }
+  .content-box .slider {
+    height: 101%;
+    width: 100%; }
+  .content-box .box {
+    height: 100%; }
+  .content-box .blue {
+    background: white; }
+  .content-box .blue2 {
+    background: red; }
+  .content-box .blue1 {
+    background: #EBF2FC; }
+  .content-box .scroll-refresher-xuq {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    margin: auto;
+    height: 100px;
+    background: orange; }

@@ -1,0 +1,29 @@
+<div>
+
+	 <!-- 搜索框-->
+			    <div class="seaech-header item-input-inset">
+			    	 <label class="item-input-wrapper">
+			            <input type="text" placeholder="请输入城市名称" id="cityname" >
+			          </label>
+			          <button class="button button-small button-clear" ng-click = 'search()'>
+			            <i class="icon-search icon-2x"></i>
+			          </button>
+			    </div>
+			    <!--内容区域-->
+			    <div class="todayWeather">
+			    </div>
+			    <div class="ee">
+			    	<div class="ff" ng-repeat='x in weather'>			    		
+			    		<div class="col-xs-5">
+			    			<p class="address">{{x.date}} </p>
+			    			<p class="address">{{x.type}} | {{x.fengli}}</p> 
+			    		</div>
+			    		<div class="col-xs-7 font">{{(x.low.replace('低温',''))}}--{{(x.high.replace('高温',''))}}</div>
+			    	</div>
+			    	<div class="bot">
+			    			
+			    		</div>
+			    		
+			    </div>
+			    	
+</div>

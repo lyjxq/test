@@ -1,0 +1,40 @@
+.contents{
+	width: 100%;
+	background: white;/*、                                    、*/
+	height: auto;
+	padding: 3px 10px;	
+	margin-bottom: 10px;
+	text-align: left;		
+}
+.text{
+	width: 100%;
+	background: white; /*要改bgcolor  414141*/
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.user{
+	color: #195F91;
+} 
+.comment,.tool{
+	width: 100%;
+	background: white;  /*/ 状态栏背景/*/
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;				
+}
+.tool{
+	color: #546474;
+}
+.comment{
+	padding-left: 10px;
+	background: #EBF2FC;
+	border: 1px solid #EBF2FC;
+	margin-top: 10px;
+}
+.tool-css{
+	height: 30px;			
+	line-height: 30px;
+	padding: 0px;
+	margin: 0px;
+}

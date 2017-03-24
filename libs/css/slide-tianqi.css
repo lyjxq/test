@@ -1,0 +1,143 @@
+.box{ 
+    height:100%; 
+} 
+.blue {
+    background-color: red;
+}
+.weather1{
+	width: 100%;
+	height: 280px;
+	background: #98d0f8;
+	position: relative;
+	text-align: left;
+	color: white;	
+}
+.weather1 p {
+	padding: 0;
+	margin: 0;
+	padding-left: 12px;
+	color: white;
+	font-size: 12px;
+}
+.weather1 .wendu{
+	width: 100%;
+	height: 35px;
+	line-height: 40px;
+	font-size: 48px;
+	padding-top: 5px;
+	
+}
+.address{
+	width: 100%;
+	height: 25px;
+	line-height: 30px;
+	padding-top: 0px;
+	
+}
+.ganmao{
+	width: 100%;
+	height: 140px;	
+	font-size: 16px;
+	padding: 10px;
+	/*background: pink;*/
+}
+.wx{
+	
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.other{
+	width: 100%;
+	height: 70px;
+	font-size: 10px;
+	/*background: #006621;*/	
+}
+.weather,.weathers,.weatherng{	
+	width: 100%;
+	height: 70px;
+	background: white;/*昨天天气样式*/
+	position: relative;
+	border: 1px solid #ccc;
+	text-align: left;
+	color: #ccc;
+	padding-left: 0;
+}
+.weathers{
+	background: transparent;
+	border: none;
+}
+.todayWeather{
+	height: 348px;
+	/*background: orange;*/
+	
+}
+.ee{
+	height: 348px;
+/*	background: burlywood;*/
+	margin-bottom: 50;
+	
+}
+.seaech-header{
+	width: 100%;
+	height: 40px;
+	background: #98d0f8;
+	border-bottom: 1px solid white;
+	
+	
+}
+.max{
+	font-size: 16px;
+}
+.bor{
+	
+	border: 1px solid dashed;
+	border-top: none;
+	border-bottom: none;
+	border-color: white;
+}
+.col-xs-5,.col-xs-7{
+	padding-top: 0px;
+	height: 70px;
+	margin-left: 0;
+	width: 40%;
+}
+.col-xs-7{
+	width: 60%;
+}
+.font{
+	font-size: 28px;
+	padding-top: 15px;
+	/*padding-left: 10px;*/
+}
+.ff{
+	width: 100%;
+	height: 70px;
+	background: white;	
+	border: 1px solid #ccc;
+	text-align: left;
+	color: #8C8C8C;
+	
+	/*"Helvetica Neue",Helvetica,Arial,sans-serif;#98d0f8*/
+}
+.ff .addr{
+	
+}
+/*.col-xs-5{
+	padding-left: 0;
+	margin-left: 0;
+}*/
+.bot{
+	width: 100%;
+	height: 50px;
+}
+.bgcolor {
+    background-color: #252525;
+}
+.bgcolorday {
+    background-color: white;
+}
+.ll{
+	width:100%;
+	height: 200px;
+	background: orange; 
+}
